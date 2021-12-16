@@ -1,0 +1,16 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #282828;
+}
+section.home{
+    width: 100vw;
+    height: 100vh;
+}
