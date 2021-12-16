@@ -183,7 +183,7 @@ section.home{
                 grid-template-rows: 1fr 2fr;
                 h1{
                     color: var(--textColor);
-                    font-size: 40px;
+                    font-size: 38px;
                     font-family: var(--NowBold);
                 }
                 p{
@@ -228,6 +228,7 @@ section.home{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 justify-items: center;
+                transition: left 1s cubic-bezier(0.93, 0.03, 0.04, 1.24);
                 .card{
                     padding: 30px;
                     display: grid;
@@ -297,6 +298,7 @@ section.home{
                     border-radius:50%;
                 }
                 .dot{
+                    cursor: pointer;
                     width: 5px;
                     height: 5px;
                     background: white;
@@ -428,6 +430,7 @@ section.home{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 justify-items: center;
+                transition: left 2s ease;
                 grid-gap: 33px;
                 .card{
                     display: grid;
@@ -507,6 +510,7 @@ section.home{
                     height: 5px;
                     background: white;
                     border-radius:50%;
+                    cursor: pointer;
                 }
             }
             .arrows{

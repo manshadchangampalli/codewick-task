@@ -252,7 +252,7 @@ section.home .main-section .right-side img {
 
 .section-boxes .box-1 .right-side .content h1 {
   color: var(--textColor);
-  font-size: 40px;
+  font-size: 38px;
   font-family: var(--NowBold);
 }
 
@@ -310,6 +310,8 @@ section.home .main-section .right-side img {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  -webkit-transition: left 1s cubic-bezier(0.93, 0.03, 0.04, 1.24);
+  transition: left 1s cubic-bezier(0.93, 0.03, 0.04, 1.24);
 }
 
 .section-boxes .box-2 .body .cards .card {
@@ -412,6 +414,7 @@ section.home .main-section .right-side img {
 }
 
 .section-boxes .box-2 .footer .dots .dot {
+  cursor: pointer;
   width: 5px;
   height: 5px;
   background: white;
@@ -578,6 +581,8 @@ section.home .main-section .right-side img {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  -webkit-transition: left 2s ease;
+  transition: left 2s ease;
   grid-gap: 33px;
 }
 
@@ -692,6 +697,7 @@ section.home .main-section .right-side img {
   height: 5px;
   background: white;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .section-boxes .box-4 .footer .arrows {
