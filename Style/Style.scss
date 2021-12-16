@@ -804,3 +804,27 @@ footer{
         }
     }
 }
+
+
+
+// for responsive
+
+@media only screen and(max-width:1024px){
+    section.home .main-section .left-side .content .home-title {
+        font-size: 40px;
+    }
+    .section-boxes .box-1 .right-side .content h1 {
+        font-size: 28px;
+    }
+    .section-boxes .box-3 .right-side img {
+        right: -202px;
+        top: -57px;
+        width: 691px;
+    }
+    .subscribe .right-side .inputbox {
+        width: 379px;
+    }
+    .subscribe .right-side .inputbox p {
+        font-size: 12px;
+    }
+}
