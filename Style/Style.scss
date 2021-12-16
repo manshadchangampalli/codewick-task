@@ -684,5 +684,17 @@ section.home{
     }
 }
 footer{
-    
+    color: var(--textColor);
+    font-family: var(--NowNorml);
+    padding: 0 140px;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    .first-section{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:2fr 1fr 1fr 2fr;
+    }
 }

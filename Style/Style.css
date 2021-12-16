@@ -914,4 +914,25 @@ section.home .main-section .right-side img {
 .try-for-free .right-side .request-btn .text img {
   margin-left: 5px;
 }
+
+footer {
+  color: var(--textColor);
+  font-family: var(--NowNorml);
+  padding: 0 140px;
+  width: 100%;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+}
+
+footer .first-section {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+}
 /*# sourceMappingURL=Style.css.map */
