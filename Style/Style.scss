@@ -696,5 +696,24 @@ footer{
         height: 100%;
         display: grid;
         grid-template-columns:2fr 1fr 1fr 2fr;
+        .sub-sec-1{
+            .logo{
+                margin-bottom: 40px;
+                justify-self: start;
+                width: 170px;
+                align-items: center;
+                display: grid;
+                grid-template-columns:1fr 1fr;
+                h1{
+                    font-size: 26px;
+                    font-family: var(--NowNorml);
+                    color: var(--textColor);
+                }
+                
+            }
+            .address{
+                margin-bottom: 25px;
+            }
+        }
     }
 }

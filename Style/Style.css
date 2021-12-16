@@ -935,4 +935,28 @@ footer .first-section {
   -ms-grid-columns: 2fr 1fr 1fr 2fr;
       grid-template-columns: 2fr 1fr 1fr 2fr;
 }
+
+footer .first-section .sub-sec-1 .logo {
+  margin-bottom: 40px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 170px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+footer .first-section .sub-sec-1 .logo h1 {
+  font-size: 26px;
+  font-family: var(--NowNorml);
+  color: var(--textColor);
+}
+
+footer .first-section .sub-sec-1 .address {
+  margin-bottom: 25px;
+}
 /*# sourceMappingURL=Style.css.map */
