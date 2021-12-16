@@ -225,6 +225,7 @@ section.home{
                 position: absolute;
                 width: 1100px;
                 height: 100%;
+                left: 0px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 justify-items: center;
@@ -303,6 +304,7 @@ section.home{
                     height: 5px;
                     background: white;
                     border-radius:50%;
+                    transition: all 1s ease;
                 }
             }
             .arrows{
@@ -310,26 +312,35 @@ section.home{
                 display: flex;
                 height: 2px;
                 grid-gap: 10px;
-                .leftarrow{
-                    width: 65%;
+                
+                .arrow1{
                     position: relative;
+                    width: 35%;
                     height: 100%;
+                    transition: width 1s ease;
+                    cursor: pointer;
                     background: rgb(255, 255, 255);
                     img{
                         transform: translateY(-48%);
                         position: absolute;
                     }
                 }
-                .rightarrow{
+                .arrow2{
                     width: 35%;
+                    cursor: pointer;
                     position: relative;
                     height: 100%;
+                    transition: width 1s ease;
                     background: rgb(255, 255, 255);
                     img{
                         position: absolute;
                         right: 0;
                         transform:translateY(-48%) rotate(180deg);
                     }
+                }
+                .arrow.active{
+                    width: 65%;
+                    
                 }
             }
         }
@@ -499,6 +510,7 @@ section.home{
                 grid-template-columns:1fr 1fr 1fr 1fr;
                 grid-gap: 5px;
                 align-items: center;
+                
                 .dot.active{
                     width: 10px;
                     height: 10px;
@@ -507,6 +519,7 @@ section.home{
                 }
                 .dot{
                     width: 5px;
+                    transition: all 1s ease;
                     height: 5px;
                     background: white;
                     border-radius:50%;
@@ -518,26 +531,34 @@ section.home{
                 display: flex;
                 height: 2px;
                 grid-gap: 10px;
-                .leftarrow{
-                    width: 65%;
+                .arrow1{
                     position: relative;
+                    width: 35%;
                     height: 100%;
+                    transition: width 1s ease;
+                    cursor: pointer;
                     background: rgb(255, 255, 255);
                     img{
                         transform: translateY(-48%);
                         position: absolute;
                     }
                 }
-                .rightarrow{
+                .arrow2{
                     width: 35%;
+                    cursor: pointer;
                     position: relative;
                     height: 100%;
+                    transition: width 1s ease;
                     background: rgb(255, 255, 255);
                     img{
                         position: absolute;
                         right: 0;
                         transform:translateY(-48%) rotate(180deg);
                     }
+                }
+                .arrow.active{
+                    width: 65%;
+                    
                 }
             }
         }
