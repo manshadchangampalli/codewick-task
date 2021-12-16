@@ -1,3 +1,8 @@
+:root {
+  --textColor: #30FBEF;
+  --whitecolor:#fff;
+}
+
 /*reset*/
 * {
   margin: 0;
@@ -16,6 +21,89 @@ body {
 
 section.home {
   width: 100vw;
+  display: -ms-grid;
+  display: grid;
   height: 100vh;
+  padding: 50px 0;
+}
+
+section.home nav {
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+}
+
+section.home nav .logo {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 170px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+section.home nav .logo h1 {
+  font-size: 26px;
+  color: var(--textColor);
+}
+
+section.home nav .nav-items {
+  height: 100%;
+  width: auto;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+}
+
+section.home nav .nav-items p {
+  padding: 0 5px;
+  color: var(--whitecolor);
+}
+
+section.home nav .nav-items .request-btn {
+  width: 210px;
+  margin-left: 10px;
+  height: 100%;
+  background: #282828;
+  -webkit-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+          box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section.home nav .nav-items .request-btn .text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+section.home nav .nav-items .request-btn .text p {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+section.home nav .nav-items .request-btn .text img {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=Style.css.map */
