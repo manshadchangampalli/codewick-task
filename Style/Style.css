@@ -452,4 +452,80 @@ section.home .main-section .right-side img {
   -webkit-transform: translateY(-48%) rotate(180deg);
           transform: translateY(-48%) rotate(180deg);
 }
+
+.section-boxes .box-3 {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  margin-top: 150px;
+  background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
+  border: 1px solid #272829;
+  -webkit-box-shadow: inset 2px 2px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 2px 2px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.section-boxes .box-3 .left-side {
+  display: -ms-grid;
+  display: grid;
+  padding: 50px 50px;
+  place-items: center;
+}
+
+.section-boxes .box-3 .left-side .content {
+  height: auto;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1.5fr 1fr;
+      grid-template-rows: 1fr 1.5fr 1fr;
+  grid-gap: 10px;
+}
+
+.section-boxes .box-3 .left-side .content h1 {
+  font-size: 40px;
+  font-family: var(--NowBold);
+  color: var(--textColor);
+  width: 385px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-boxes .box-3 .left-side .content p {
+  color: white;
+  font-family: var(--NowNorml);
+  width: 300px;
+}
+
+.section-boxes .box-3 .left-side .content .download-btn {
+  width: 210px;
+  height: 70px;
+  background: #282828;
+  -webkit-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+          box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.section-boxes .box-3 .left-side .content .download-btn h2 {
+  font-family: var(--NowBold);
+  font-size: 18px;
+  color: white;
+}
+
+.section-boxes .box-3 .right-side img {
+  position: absolute;
+  right: -150px;
+  top: -120px;
+  width: 800px;
+}
 /*# sourceMappingURL=Style.css.map */
