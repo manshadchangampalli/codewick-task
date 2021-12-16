@@ -11,6 +11,7 @@ const Box4ArrowOne = document.querySelector(" .box-4 .arrow1")
 const Box4ArrowTwo = document.querySelector(" .box-4 .arrow2")
 Box4Slid.style.left="0px"
 
+const inputBox = document.querySelector(".subscribe .inputbox")
 
 const box2DotClicked=(which,e)=>{
     const ActiveClassNow = document.querySelector(".box-2 .dot.active")
@@ -147,3 +148,12 @@ function box4changeArrow(){
 
     }
 }
+
+
+inputBox.addEventListener("click",()=>{
+    document.querySelector(".subscribe .placeholder").style.display="none"
+})
+document.querySelector("input").addEventListener("focusout",()=>{
+    console.log("hello");
+    document.querySelector(".subscribe .placeholder").style.display="block"
+})
