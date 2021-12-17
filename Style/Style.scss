@@ -35,10 +35,48 @@ body{
     position: fixed;
     background: #000;
     display: grid;
-    padding: 30px 20px;
+    display: none;
+    padding: 100px 20px;
     font-size: 16px;
     color: white;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    a{
+        text-decoration: none;
+        color: var(--whitecolor);
+    }
+    .navItem{
+        padding: 0 5px;
+        font-family: var(--NowNorml);
+        color:var(--whitecolor)
+    }
+    a.active{
+        color: var(--textColor);
+    }
+    .request-btn{
+        width: 210px;
+        margin-left: 10px;
+        height: 50px;
+        background: #282828;
+        box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+        border-radius: 50px;
+        display: grid;
+        place-items: center;
+        .text{
+            display: grid;  
+            grid-template-columns: auto auto;
+            p{
+                font-family: var(--NowNorml);
+                font-weight: normal;
+                font-size: 16px;
+                color: var(--textColor) ;
+            }
+            img{
+                margin-left: 5px;
+            }
+        }
+        
+    }
 }
 section.home{
     width: 100vw;
@@ -56,7 +94,7 @@ section.home{
                 width: 40px;
                 height:40px;
                 display: grid;
-                position: absolute;
+                position: fixed;
                 top: 9%;
                 display: none;
                 right: 5%;

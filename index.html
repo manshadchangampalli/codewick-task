@@ -1,414 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insignia</title>
-    <link rel="stylesheet" href="Style/Style.css">
-</head>
-<body>
-    <section class="res-nav">
-        
-    </section>
-    <!------------------------------------- home section started  ------------------------------->
-    <section class="home">
-        <!-- nav section started  -->
-        <nav>
-            <div onclick="navClicked()" class="menu_icon">
-                    <div class="fline" id="fline"></div>
-                    <div class="sline" id="sline"></div>
-                    <div class="tline" id="tline"></div>
-                </div>
-            <div class="logo">
-                <img src="Images/Home/Logo.png" alt="">
-                <h1>Insignia</h1>
-            </div>
-            <div class="nav-items">
-                <p class="helo"><a href="#help">Help</a></p>
-                <p class="features"><a href="#features">Features</a></p>
-                <p class="about"><a href="#about">About</a></p>
-                <p class="signup"><a href="#signup">Signup</a></p>
-                <div class="request-btn">
-                    <div class="text">
-                        <p>Request Demo </p>
-                        <img src="Images/Home/Arrow.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- nav section ended  -->
-        <!-- main section strated  -->
-        <div class="main-section">
-            <div class="left-side">
-                <div class="content">
-                    <h1 class="home-title">Save your data storage here</h1>
-                    <p class="home-sub-title">Insignia is a data storage area that has been
-                        tested for security, so you can store your data here
-                        safely but not be afraid of being stolen by others.</p>
-                    <div class="learn-more-btn">
-                        <p>Learn More</p>
-                    </div>
-                </div>
-            </div>
-            <div class="right-side">
-                <img src="Images/Home/Cloud_database_SVG 1.png" alt="">
-            </div>
-        </div>
-        <!-- main section ended  -->
-    </section>
-    <!------------------------------------- home section ended  ------------------------------->
-    <!------------------------------------- second section started  ------------------------------->
-    <section class="section-boxes">
-        <!-- box1 started  -->
-        <div class="box-1">
-            <div class="left-side">
-                <img src="Images/second/security_SVG 1.png" alt="">
-            </div>
-            <div class="right-side">
-                <div class="content">
-                    <h1>We are a high-level data storage bank</h1>
-                    <p>The place to store various data that you can access at any time through the internet  and where you can carry it. <br> 
-                        This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- box1 ended  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.6.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.6.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.6.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-        <!-- box2 started  -->
-        <div class="box-2">
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-            <!-- header section start  -->
-            <div class="head">
-                <h1>Features</h1>
-            </div>
-            <!-- header section end  -->
-            
-            <!-- body section start -->
-            <div class="body">
-                <div class="cards">
-                    <div class="card card1">
-                        <img src="/Images/second/ClipboardText.png" alt="">
-                        <div class="body">
-                            <h1>Search Data</h1>
-                            <p>Don’t worry if your data is very large, Insignia provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
-                        </div>
-                        <div class="learnmore">
-                            <P>Learn More</P>
-                            <img src="/Images/Home/Arrow.png" alt="">
-                        </div>
-                    </div>
-                    <div class="card card2">
-                        <img src="/Images/second/Printer.png" alt="">
-                        <div class="body">
-                            <h1>Print Out</h1>
-                            <p>Print out service gives you convenience if someday you need print data, just edit it all and just print it.</p>
-                        </div>
-                        <div class="learnmore">
-                            <P>Learn More</P>
-                            <img src="/Images/Home/Arrow.png" alt="">
-                        </div>
-                    </div>
-                    <div class="card card3">
-                        <img src="/Images/second/ShieldCheck.png" alt="">
-                        <div class="body">
-                            <h1>Security Code</h1>
-                            <p>Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</p>
-                        </div>
-                        <div class="learnmore">
-                            <P>Learn More</P>
-                            <img src="/Images/Home/Arrow.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- body section end -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-            <!-- footer section start -->
-            <div class="footer">
-                <div class="dots">
-                    <div onclick="box2DotClicked(1,event)" class="dot active"></div>
-                    <div onclick="box2DotClicked(2,event)" class="dot"></div>
-                    <div onclick="box2DotClicked(3,event)" class="dot"></div>
-                </div>
-                <div class="arrows">
-                    <div onclick="box2ArrowClicked(1,event)" class="arrow active arrow1">
-                        <img src="/Images/second/Polygon 1.png" alt="">
-                    </div>
-                    <div onclick="box2ArrowClicked(2,event)" class="arrow arrow2">
-                        <img src="/Images/second/Polygon 1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- footer section end -->
-
-        </div>
-        <!-- box2 ended  -->
-
-        <!-- box13 started  -->
-        <div class="box-3">
-            <div class="left-side">
-                <div class="content">
-                    <h1>Download Our App</h1>
-                    <p>The place to store various data that you can access at any time through the internet  and where you can carry it.  <br>
-                        This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
-                    </p>
-                    <div class="download-btn">
-                        <h2>Download</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="right-side">
-                <img src="/Images/second/Phone 1.png" alt="">
-            </div>
-        </div>
-        <!-- box3 ended  -->
-
-
-        <!-- box 4 started  -->
-        <div class="box-4">
-
-            <!-- header section start  -->
-            <div class="head">
-                <h1>Testimonials</h1>
-            </div>
-            <!-- header section end  -->
-            
-            <!-- body section start -->
-            <div class="body">
-                <div class="cards">
-                    <!-- card 1 start  -->
-                    <div class="card card-1">
-                        <img src="/Images/second/Ellipse 76.png" alt="">
-                        <div class="content">
-                            <h1>John Fang </h1>
-                            <div class="category">
-                                <h2>Web Designer</h2>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>    
-                            </div>
-                            <p class="desc">
-                                Suspendisse ultrices at diam lectus nullam. 
-                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- card 1 end -->
-
-
-                    <!-- card 2 start  -->
-                    <div class="card card-2">
-                        <img src="/Images/second/Ellipse 76 (2).png" alt="">
-                        <div class="content">
-                            <h1>Jenny Doe</h1>
-                            <div class="category">
-                                <h2>UX Designer</h2>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>    
-                            </div>
-                            <p class="desc">
-                                Suspendisse ultrices at diam lectus nullam. 
-                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- card 2 end  -->
-
-                    <!-- card 3 start  -->
-                    <div class="card card-3">
-                        <img src="/Images/second/Ellipse 76.png" alt="">
-                        <div class="content">
-                            <h1>John Fang </h1>
-                            <div class="category">
-                                <h2>Web Designer</h2>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>    
-                            </div>
-                            <p class="desc">
-                                Suspendisse ultrices at diam lectus nullam. 
-                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- card 3 end  -->
-                    <!-- card 4 satrt -->
-
-                    <div class="card card-2">
-                        <img src="/Images/second/Ellipse 76 (2).png" alt="">
-                        <div class="content">
-                            <h1>Jenny Doe</h1>
-                            <div class="category">
-                                <h2>UX Designer</h2>
-                                <div class="dots">
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                    <div class="dot"></div>
-                                </div>    
-                            </div>
-                            <p class="desc">
-                                Suspendisse ultrices at diam lectus nullam. 
-                                Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- card 4 end -->
-                </div>
-            </div>
-            <!-- body section end -->
-
-            <!-- footer section start -->
-            <div class="footer">
-                <div class="dots">
-                    <div onclick="box4DotClicked(1,event)" class="dot active"></div>
-                    <div onclick="box4DotClicked(2,event)" class="dot"></div>
-                    <div onclick="box4DotClicked(3,event)" class="dot"></div>
-                    <div onclick="box4DotClicked(4,event)" class="dot"></div>
-                </div>
-                <div class="arrows">
-                    <div onclick="box4ArrowClicked(1,event)" class="arrow arrow1 active">
-                        <img src="/Images/second/Polygon 1.png" alt="">
-                    </div>
-                    <div onclick="box4ArrowClicked(2,event)" onclick="box4ArrowClicked(1,event)" class="arrow arrow2">
-                        <img src="/Images/second/Polygon 1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- footer section end -->
-
-        </div>
-        <!-- box4 end  -->
-    </section>
-    <!-- box-section ended  -->
-
-    <!-- subscribe section started  -->
-    <section class="subscribe">
-        <div class="left-side">
-            <h1>Subscribe !</h1>
-            <p>Join our newsletter to never miss any latest news.</p>
-        </div>
-        <div class="right-side">
-            <form class="inputbox">
-                <input class="email" type="email"  required>
-                <p class="placeholder">Enter your e-mail address here</p>
-                <button type="submit" class="button-email">Join Us</button>
-            </form>
-        </div>
-    </section>
-    <!-- subscribe section ended  -->
-
-    <!-- try for free section started  -->
-    <section class="try-for-free">
-        <div class="left-side">
-            <h1>Try for free!</h1>
-            <p>Get limited 1 week free try our features!</p>
-        </div>
-        <div class="right-side">
-            <div class="button button1">Learn more</div>
-            <div class="request-btn">
-                <div class="text">
-                    <p>Request Demo </p>
-                    <img src="Images/Home/Arrow.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- try for free section ended  -->
-
-    <footer>
-        <!-- first section of footer is started  -->
-        <div class="first-section">
-            <!-- sub sec1 started  -->
-            <div class="sub-sec-1">
-                <div class="logo">
-                    <img src="Images/Home/Logo.png" alt="">
-                    <h1>Insignia</h1>
-                </div>
-                <p class="address">
-                    <a href="">
-                        Insignia Society, 234
-                    <br>
-                    Bahagia Ave Street 
-                    PRBW 29281
-                    </a>
-                </p>
-                <p class="contact">
-                    <a href="">
-                        info@insignia.com
-                        <br>
-                        1-232-3434 (Main)
-                    </a>
-                </p>
-
-            </div>
-            <!-- sub sec1 ended  -->
-
-            <!-- sub sec2 started  -->
-            <div class="sub-sec-2">
-                <p class="about"><a href="">About</a></p>
-                <p class="navItems"><a href="">Profile</a></p>
-                <p class="navItems"><a href="">Features</a></p>
-                <p class="navItems"><a href="">Careers</a></p>
-                <p class="navItems"><a href="">DW News</a></p>           
-            </div>
-            <!-- sub sec2 ended  -->
-
-            <!-- sub sec3 started  -->
-            <div class="sub-sec-3">
-                <p class="Help"><a href="">Help</a></p>
-                <p class="navItems-sec-3"><a href="">Support</a></p>
-                <p class="navItems-sec-3"><a href="">Sign up</a></p>
-                <p class="navItems-sec-3"><a href="">Guide</a></p>
-                <p class="navItems-sec-3"><a href="">Reports</a></p>
-                <p class="navItems-sec-3"><a href="">Q&A</a></p>
-            </div>
-
-            <!-- sub sec3 started  -->
-
-            <!-- sub sec4 started  -->
-            <div class="sub-sec-4">
-                <p>Social Meida</p>
-                <div class="icons">
-                    <div class="icon icon1">
-                        <img src="/Images/footer/FacebookLogo.png" alt="">
-                    </div>
-                    <div class="icon icon2">
-                        <img src="/Images/footer/InstagramLogo.png" alt="">
-                    </div>
-                    <div class="icon icon3">
-                        <img src="/Images/footer/TwitterLogo.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- sub sec4 started  -->
-        </div>
-        <!-- first section of footer is ended  -->
-
-        <!-- second section of footer is started  -->
-        <div class="second-section">
-            <p>© Insignia™, 2020. All rights reserved.</p>
-            <img src="/Images/footer/Group 75.png" alt="">
-        </div>
-        <!-- second section of footer is ended  -->
-    </footer>
-
-    <script src="Script/Script.js"></script>
-</body>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -192,12 +192,24 @@ const navClicked = ()=>{
         document.getElementById("fline").style.transform = " translateY(6px) rotate(-45deg)";
         document.getElementById("tline").style.transform = " translateY(-6px) rotate(45deg)";
         document.getElementById("sline").style.display = "none";
+        document.querySelector(".res-nav").style.display="grid"
         menuOpen=true
     }
     else{
         document.getElementById("fline").style.transform = " translateY(0) rotate(0deg)";
         document.getElementById("tline").style.transform = " translateY(0) rotate(0deg)";
         document.getElementById("sline").style.display = "block";
+        document.querySelector(".res-nav").style.display="none"
+
         menuOpen=false
     }
 }
+
+
+const allNavItems = document.querySelectorAll(".navItem a")
+allNavItems.forEach((item)=>{
+    item.addEventListener("click",(e)=>{
+        document.querySelector(".navItem .active").classList.remove("active")
+        e.target.classList.add("active")
+    })
+})

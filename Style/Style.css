@@ -42,11 +42,58 @@ body {
   background: #000;
   display: -ms-grid;
   display: grid;
-  padding: 30px 20px;
+  display: none;
+  padding: 100px 20px;
   font-size: 16px;
   color: white;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.res-nav a {
+  text-decoration: none;
+  color: var(--whitecolor);
+}
+
+.res-nav .navItem {
+  padding: 0 5px;
+  font-family: var(--NowNorml);
+  color: var(--whitecolor);
+}
+
+.res-nav a.active {
+  color: var(--textColor);
+}
+
+.res-nav .request-btn {
+  width: 210px;
+  margin-left: 10px;
+  height: 50px;
+  background: #282828;
+  -webkit-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+          box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), -3px -3px 8px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.res-nav .request-btn .text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.res-nav .request-btn .text p {
+  font-family: var(--NowNorml);
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+.res-nav .request-btn .text img {
+  margin-left: 5px;
 }
 
 section.home {
@@ -76,7 +123,7 @@ section.home nav .menu_icon {
   height: 40px;
   display: -ms-grid;
   display: grid;
-  position: absolute;
+  position: fixed;
   top: 9%;
   display: none;
   right: 5%;
