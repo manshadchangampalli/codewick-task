@@ -3,6 +3,34 @@ const Box2Slid = document.querySelector(" .box-2 .body .cards")
 const Box2ArrowOne = document.querySelector(" .box-2 .arrow1")
 const Box2ArrowTwo = document.querySelector(" .box-2 .arrow2")
 Box2Slid.style.left="0px"
+console.log(window.innerWidth);
+window.addEventListener('resize',()=>{
+    document.location.reload(true)
+})
+var box2transform2 = "-200px"
+var box2transform3 = "-400px"
+var box4transform2 = "-500px"
+var box4transform3 = "-1000px"
+var box4transform4 = "-1500px"
+
+if(window.innerWidth<900 && window.innerWidth>500 ){
+     box2transform2 = "-250px"
+     box2transform3 = "-450px"
+     box4transform2 = "-750px"
+     box4transform3 = "-1150px"
+     box4transform4 = "-1700px"
+}
+if(window.innerWidth<500){
+    box2transform2 = "-300px"
+    box2transform3 = "-620px"
+    box4transform2 = "-800px"
+    box4transform3 = "-1250px"
+    box4transform4 = "-1800px"
+}
+
+var fline = document.getElementsByClassName("fline");
+var sline = document.getElementsByClassName("sline");
+var tline = document.getElementsByClassName("tline");
 
 
 const box4Dots = document.querySelectorAll(".box-4 .footer .dot")
@@ -20,30 +48,30 @@ const box2DotClicked=(which,e)=>{
         Box2Slid.style.left="0px"
     }
     if(which===2){
-        Box2Slid.style.left="-200px"
+        Box2Slid.style.left=box2transform2
     }
     if(which===3){
-        Box2Slid.style.left="-400px"
+        Box2Slid.style.left=box2transform3
     }
     changeDots(e)
     changeArrow()
 
 }
 const box2ArrowClicked = (which , e)=>{
-    if(which===1 & Box2Slid.style.left != "-400px"){
+    if(which===1 & Box2Slid.style.left != box2transform3){
         if(Box2Slid.style.left === "0px"){
-            Box2Slid.style.left = "-200px"
+            Box2Slid.style.left = box2transform2
         }
         else{
-            Box2Slid.style.left = "-400px"
+            Box2Slid.style.left = box2transform3
         }
     }
     else if(which===2 & Box2Slid.style.left!=="0px"){
-        if(Box2Slid.style.left === "-200px"){
+        if(Box2Slid.style.left === box2transform2){
             Box2Slid.style.left = "0px"
         }
         else{
-            Box2Slid.style.left = "-200px"
+            Box2Slid.style.left = box2transform2
         }
     }
     
@@ -60,7 +88,7 @@ function changeArrow(){
         Box2ArrowTwo.classList.remove("active")
 
     }
-    else if(Box2Slid.style.left=="-400px"){
+    else if(Box2Slid.style.left==box2transform3){
         Box2ArrowTwo.classList.add("active")
         Box2ArrowOne.classList.remove("active")
 
@@ -69,7 +97,7 @@ function changeArrow(){
 function changeDots(e){
     if(Box2Slid.style.left==="0px"){
         box2Dots[0].classList.add('active')
-    }else if(Box2Slid.style.left==="-200px"){
+    }else if(Box2Slid.style.left===box2transform2){
         box2Dots[1].classList.add('active')
     }else{
         box2Dots[2].classList.add('active')
@@ -86,34 +114,34 @@ const box4DotClicked = (which,e) =>{
         Box4Slid.style.left="0px"
     }
     if(which===2){
-        Box4Slid.style.left="-500px"
+        Box4Slid.style.left= box4transform2
     }
     if(which===3){
-        Box4Slid.style.left="-1000px"
+        Box4Slid.style.left= box4transform3
     }
     if(which===4){
-        Box4Slid.style.left="-1500px"
+        Box4Slid.style.left= box4transform4
     }
     box4changeDots()
     box4changeArrow()
 }
 const box4ArrowClicked =(which , e)=>{
-    if(which===1 & Box4Slid.style.left != "-1500px"){
+    if(which===1 & Box4Slid.style.left != box4transform4){
         if(Box4Slid.style.left === "0px"){
-            Box4Slid.style.left = "-500px"
+            Box4Slid.style.left = box4transform2
         }
-        else if(Box4Slid.style.left === "-500px"){
-            Box4Slid.style.left = "-1000px"
+        else if(Box4Slid.style.left === box4transform2){
+            Box4Slid.style.left = box4transform3
         }else{
-            Box4Slid.style.left = "-1500px"
+            Box4Slid.style.left = box4transform4
         }
     }
     else if(which===2 & Box4Slid.style.left!=="0px"){
-        if(Box4Slid.style.left === "-1500px"){
-            Box4Slid.style.left = "-1000px"
+        if(Box4Slid.style.left === box4transform4){
+            Box4Slid.style.left = box4transform2
         }
-        else if(Box4Slid.style.left === "-1000px"){
-            Box4Slid.style.left = "-500px"
+        else if(Box4Slid.style.left === box4transform3){
+            Box4Slid.style.left = box4transform2
         }else{
             Box4Slid.style.left = "0px"
         }
@@ -128,9 +156,9 @@ const box4ArrowClicked =(which , e)=>{
 function box4changeDots(e){
     if(Box4Slid.style.left==="0px"){
         box4Dots[0].classList.add('active')
-    }else if(Box4Slid.style.left==="-500px"){
+    }else if(Box4Slid.style.left===box4transform2){
         box4Dots[1].classList.add('active')
-    }else if(Box4Slid.style.left==="-1000px"){
+    }else if(Box4Slid.style.left===box4transform3){
         box4Dots[2].classList.add('active')
     }else{
         box4Dots[3].classList.add('active')
@@ -142,7 +170,7 @@ function box4changeArrow(){
         Box4ArrowTwo.classList.remove("active")
 
     }
-    else if(Box4Slid.style.left=="-1500px"){
+    else if(Box4Slid.style.left==box4transform4){
         Box4ArrowTwo.classList.add("active")
         Box4ArrowOne.classList.remove("active")
 
@@ -157,3 +185,19 @@ document.querySelector("input").addEventListener("focusout",()=>{
     console.log("hello");
     document.querySelector(".subscribe .placeholder").style.display="block"
 })
+var menuOpen = false
+const navClicked = ()=>{
+    
+    if(!menuOpen){
+        document.getElementById("fline").style.transform = " translateY(6px) rotate(-45deg)";
+        document.getElementById("tline").style.transform = " translateY(-6px) rotate(45deg)";
+        document.getElementById("sline").style.display = "none";
+        menuOpen=true
+    }
+    else{
+        document.getElementById("fline").style.transform = " translateY(0) rotate(0deg)";
+        document.getElementById("tline").style.transform = " translateY(0) rotate(0deg)";
+        document.getElementById("sline").style.display = "block";
+        menuOpen=false
+    }
+}
